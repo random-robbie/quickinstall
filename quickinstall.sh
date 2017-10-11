@@ -4,6 +4,8 @@
 # complete license text
 # Source code at https://github.com/jgamblin/quickinstall
 
+export DEBIAN_FRONTEND=noninteractive;
+
 # Upgrade installed packages to latest
 echo -e "\nRunning a package upgrade...\n"
 apt-get -qq update && apt-get -qq dist-upgrade
